@@ -41,7 +41,7 @@ header#main .logo-main img {
 
 /** Hero Section **/ 
 .hero-section {
-    height: 100vh;
+    height: 840px;
 }
 .hero-table {
     display: table;
@@ -59,7 +59,7 @@ header#main .logo-main img {
     position: absolute;
     top: 0;
     right: 0;
-    height: 100vh;
+    height: 900px;
     width: 45vw;
     z-index: 5;
 }
@@ -96,28 +96,28 @@ img.pencil {
 }
 
 .carousel-item {
-    height: 100vh;
+    height: 900px;
 }
 
 .quick-links-box {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(5,1fr);
     grid-gap: 10px;
-    width: 45vw;
     margin-top: 45px;
     margin-left: 12px;
+    max-width: 50vw;
 }
 
 .quick-link-single {
-    height: 190px;
-    width: 190px;
+    height: 130px;
+    width: 130px;
     border-radius: 15px;
     background-position: center;
     background-size: cover!important;
     position: relative;
     transition:all .3s ease-in;
     cursor: pointer;
-    
+    margin: 0 auto;
 }
 
 .overlay {
