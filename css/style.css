@@ -1,0 +1,189 @@
+/** 
+Main Styles **/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+/** ========================================= Header **================================================ **/
+header#main {position: absolute;left: 0;right: 0;top: 50px;}
+
+header#main .logo-main img {
+    width: 140px;
+}
+
+.navigation-bar {
+    background: #fff;
+    box-shadow: 5px 5px 10px #0002;
+    padding: 10px;
+    border-radius: 50px;
+    position: relative;
+    z-index: 10;
+}
+
+.navigation-bar ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+.navigation-bar ul li {
+    padding: 10px;
+    display: inline-block;
+}
+
+.navigation-bar ul li a {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/** Hero Section **/ 
+.hero-section {
+    height: 100vh;
+}
+.hero-table {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%;
+}
+
+.hero-slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 45vw;
+    z-index: 5;
+}
+
+.main-hero-image {
+    height: 100vh;
+    width: 45vw;
+    z-index: 1;
+    background-position: top;
+    background-size: cover;
+}
+
+.hero-section .content p {
+    font-size: 24px;
+    letter-spacing: 0px;
+}
+
+ul.list-features li {
+    font-size: 28px;
+    color: #035565;
+    font-weight: bold;
+}
+
+ul.list-features {
+    margin: 0;
+    padding: 0px 25px;
+}
+
+img.pencil {
+    position: absolute;
+    right: 27%;
+    width: 22%;
+    z-index: 99;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.quick-links-box {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    width: 45vw;
+    margin-top: 45px;
+    margin-left: 12px;
+}
+
+.quick-link-single {
+    height: 190px;
+    width: 190px;
+    border-radius: 15px;
+    background-position: center;
+    background-size: cover!important;
+    position: relative;
+    transition:all .3s ease-in;
+    cursor: pointer;
+    
+}
+
+.overlay {
+    visibility: hidden;
+    opacity: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0px 40px;
+    border-radius: 15px;
+    text-align: center;
+    transition:all .2s ease-in;
+}
+
+.overlay{
+    background: linear-gradient(to right, #072b85, #008046);
+    
+}
+.quick-link-single:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+    transition:all .2s ease-in;
+}
+
+/** Academic Curriculum **/ 
+
+
+.academic-curriculum-section {
+    
+margin-top: -95px;
+}
+
+.academic-curriculum-section h4.section-title {
+    font-size: 60px;
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    line-height: 53px;
+}
+
+.academic-curriculum {
+    padding: 100px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.curriculums {
+    margin-top: 95px;
+}
+
+.single-curri h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.single-curri p {
+    font-size: 16px;
+    color: #fff8;
+    padding: 0px 70px 0px 0px;
+}
+
+.single-curri {
+    margin-top: 50px;
+}
