@@ -1,9 +1,9 @@
 jQuery(document).ready(function($){
-    if(window.innerHeight < 1080){
-        $(document).on("mousemove",function(e){
-            $(".pencil").css({
-                "right":`${e.pageX*0.5}`
-            })
-        })
-    }
+    $(".testimonials").slick({
+        slidesToShow:5,
+        nav:true,
+        prevArrow:"<button class='slick-prev'><i class='fa fa-arrow-left'></i></button>",
+        nextArrow:"<button class='slick-next'><i class='fa fa-arrow-right'></i></button>"
+
+    })
 })

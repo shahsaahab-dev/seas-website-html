@@ -2,6 +2,9 @@
 Main Styles **/ 
 
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+body{
+    overflow-x: hidden;
+}
 /** ========================================= Header **================================================ **/
 header#main {position: absolute;left: 0;right: 0;top: 50px;}
 
@@ -90,8 +93,8 @@ ul.list-features {
 
 img.pencil {
     position: absolute;
-    right: 27%;
-    width: 22%;
+    right: 18%;
+    width: 30%;
     z-index: 99;
 }
 
@@ -186,4 +189,253 @@ margin-top: -95px;
 
 .single-curri {
     margin-top: 50px;
+}
+
+/** Why Seas Wrapper **/
+.pattern-bg{
+    position: relative;
+    background-image:url(../images/vector-2.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.pattern-bg-2{
+    position: relative;
+    background-image:url(../images/pattern-2.svg);
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+h4.section.subtitlte {
+    text-align: center;
+    font-weight: 400;
+}
+
+h2.section-title {
+    text-align: center;
+    font-weight: 500;
+    background: -webkit-linear-gradient(#072b85, #008046);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.why-choose-us-wrapper {padding: 80px 0px;}
+
+img#wcu-pencil-1 {
+    position: absolute;
+    left: -10%;
+    top: 10%;
+    width: 25%;
+    transform: rotate(180deg);
+}
+
+.count-box {
+    background:linear-gradient(to right, #072b85, #008046);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    color: #fff;
+    font-weight: 900;
+}
+
+.single-why-box {
+    text-align: center;
+}
+
+.single-why-box h3 {
+    font-size: 20px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 700;
+}
+
+.why-points {
+    margin-top: 40px;
+}
+
+img#wcu-pencil-2 {
+    position: absolute;
+    z-index: 2;
+    left: 83%;
+    width: 25%;
+    top: -35%;
+}
+
+/** Facts Wrapper */ 
+.facts-wrapper h3.section-title {
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.facts-wrapper {
+    padding: 50px;
+}
+
+.fact-single {
+    text-align: center;
+    color: #fff;
+}
+
+.fact-single .figure-count {
+    font-size: 36px;
+}
+
+.fact-single p {
+    font-weight: 700;
+}
+
+.facts {
+    margin-top: 50px;
+}
+
+
+/** Testimonial Section **/ 
+.testimonial-section-wrapper {
+    padding: 50px 15px;
+    margin: 0px 0px 30px 0;
+}
+
+h3.section-title {
+    text-align: center;
+}
+
+h3.section-title strong {
+    display: block;
+}
+
+.testimonial-single {
+    background: #fff;
+    box-shadow: 1px 8px 10px #2223;
+    text-align: center;
+    padding: 20px 15px;
+    border: 1px solid #d9d9d9;
+    margin: 10px 10px 35px 10px;
+    border-radius: 10px;
+}
+
+.testi-image {
+    height: 100px;
+    width: 100px;
+    background: #000;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.testimonial-single p {
+    font-size: 13px;
+    color: #0009;
+}
+
+.testimonial-single h3 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.testimonials {
+    margin-top: 40px;
+}
+
+button.slick-next.slick-arrow {
+    position: absolute;
+    left: 51%;
+}
+
+button.slick-prev.slick-arrow {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -35px;
+}
+
+.slick-arrow {
+    margin-top: 20px;
+    background: #fff;
+    border: 1px solid #d9d9d9;
+    border-radius: 50%;
+    width: 30px;
+    text-align: center;
+    color: #0009;
+    box-shadow: 5px 5px 10px #2224;
+    height: 40px;
+    width: 40px;
+}
+
+/** Footer Section **/ 
+.newsletter {
+    text-align: center;
+}
+
+.newsletter h3 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 29px;
+}
+
+.newsletter form {
+    margin-top: 30px;
+}
+
+.newsletter form input[type='email'] {border: 3px solid #000;padding: 10px 30px;border-radius: 30px;font-size: 14px;text-transform: lowercase;font-weight: 600;}
+
+.newsletter form input[type="submit"] {
+    background: #000;
+    padding: 10px 50px;
+    color: #fff;
+    border: none;
+    border-radius: 40px;
+    background: linear-gradient(to right,#072b85, #008046);
+    text-transform: lowercase;
+}
+
+/** Contact Us **/
+.contact-us-wrapper{
+    background: linear-gradient(to right, #072b85d9, #008046e8),url(../images/contact-us-bg.jpg);
+    padding: 50px;
+}
+
+.contact-us-wrapper h5 {
+    text-align: center;
+    color: #fff;
+    font-size: 26px;
+    margin: 0;
+}
+
+.contact-us-wrapper h3 {
+    text-align: center;
+    font-size: 32px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.form-wrapper {
+    background: #fff;
+    padding: 30px 50px;
+    border-radius: 10px;
+}
+
+.form-wrapper label {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0;
+}
+
+.form-wrapper input {
+    border: none;
+    padding: 0;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 0;
+    padding-bottom: 10px;
+    font-size: 14px;
+    margin-top: 10px;
 }
