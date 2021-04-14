@@ -52,7 +52,48 @@ header#main .logo-main img {
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+/** Mobile Menu **/
+#open_menu{
+    display: none;
+}
+.mobile-menu {
+    background: #fff;
+    position: fixed;
+    right: 50%;
+    z-index: 99999;
+    height: 100vh;
+    width: 45vw;
+    box-shadow: 5px 10px 10px #222;
+    visibility: hidden;
+    opacity: 0;
 
+}
+
+.mobile-menu ul {
+    padding: 0;
+    list-style: none;
+    margin: 0;
+}
+
+.mobile-menu ul li {
+    padding: 10px;
+    border-bottom: 1px solid #d9d9d9;
+}
+
+.mobile-menu::after {content: "";background: #0000005c;width: 100vw;height: 100%;position: absolute;right: 100%;top: 0;}
+
+.mobile-menu ul li a {
+    color: #000;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.mobile-menu ul li:hover {background: linear-gradient(to right, #072b85d9, #008046e8);transition: all .4s ease-in;}
+
+.mobile-menu ul li:hover a {
+    color: #fff;
+    transition: all .2s ease-in;
+}
 /** Hero Section **/ 
 .hero-section {
     height: 840px;
@@ -386,6 +427,7 @@ button.slick-prev.slick-arrow {
 /** Footer Section **/ 
 .newsletter {
     text-align: center;
+    margin-bottom: 75px;
 }
 
 .newsletter h3 {
@@ -551,4 +593,53 @@ button.slick-prev.slick-arrow {
 .member-picture:hover a{
      color:#fff;
      transition: all .3s ease-in;
+}
+
+
+/** Footer **/
+footer#main {
+    background-position: bottom center;
+    background-size: cover;
+    padding: 100px 0px 50px 0px;
+    position: relative;
+}
+
+footer .logo {
+    margin: 20px 0px;
+}
+
+ul.footer-links {
+    margin: 0;
+    list-style: none;
+    margin-top: 50px;
+}
+
+ul.social-links {
+    padding: 0;
+    list-style: none;
+    margin-top: 50px;
+}
+
+ul.social-links li {
+    display: inline;
+    padding: 0px 10px 0 0;
+}
+
+
+ul.footer-links li {
+    padding: 5px 0px;
+}
+
+ul.footer-links li a {
+    color: #0009;
+    font-weight: 600;
+}
+
+footer img#wcu-pencil-1 {
+    width: 20%;
+}
+
+footer img#wcu-pencil-2 {
+    width: 20%;
+    left: 88%;
 }
