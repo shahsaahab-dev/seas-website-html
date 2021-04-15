@@ -94,6 +94,54 @@ header#main .logo-main img {
     color: #fff;
     transition: all .2s ease-in;
 }
+/** Secondary Header for Other Pages **/
+header#secondary {
+    border-bottom: 1px solid #d9d9d9;
+    box-shadow: -4px -1px 10px #0000000a;
+    padding-top: 10px;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    z-index: 2;
+}
+
+header#secondary ul.navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+
+header#secondary ul.navigation li {
+    display: inline-block;
+}
+
+header#secondary .logo img {
+    max-width: 135px;
+    margin: 0 0 10px 0;
+}
+
+ul.navigation li {
+    padding: 10px 15px;
+}
+
+header#secondary ul.navigation li {
+    font-weight: 600;
+    position: relative;
+}
+
+header#secondary ul.navigation li a {
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+header#secondary ul.navigation li::after {content: "";width: 0;height: 2px;position: absolute;background: linear-gradient(to right, #053f76, #026c56);left: 25%;top: 85%;}
+
+header#secondary ul.navigation li:hover::after {
+    width: 50%;
+    transition: all .3s ease-in;
+}
 /** Hero Section **/ 
 .hero-section {
     height: 840px;
@@ -102,6 +150,8 @@ header#main .logo-main img {
     display: table;
     width: 100%;
     height: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .hero-table-cell {
@@ -132,6 +182,37 @@ header#main .logo-main img {
     letter-spacing: 0px;
 }
 
+/** Hero Secondary **/
+.hero-area {
+    height: 235px;
+    border-bottom: 1px solid #d9d9d9;
+    background: #eaeaea;
+}
+.hero-bg {
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.hero-bg::after {content: "";background: linear-gradient(to right,#05437385,#01794b);position: absolute;left: 0;right: 0;width: 100%;height: 100%;top: 0;z-index: 1;}
+.hero-bg h3 {
+    color: #fff;
+    font-size: 42px;
+    font-family: 'Merriweather';
+}
+
+ul.breadcrumb {
+    background: none;
+    text-align: center;
+    color: #d9d9d9;
+    justify-content: center;
+}
+ul.breadcrumb li a {
+    color: #fff;
+    margin: 0px 10px;
+}
+/** End Hero Secondary **/
 ul.list-features li {
     font-size: 28px;
     color: #035565;
@@ -156,7 +237,7 @@ img.pencil {
 
 .quick-links-box {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap: 10px;
     margin-top: 45px;
     margin-left: 12px;
@@ -164,8 +245,8 @@ img.pencil {
 }
 
 .quick-link-single {
-    height: 130px;
-    width: 130px;
+    height: 160px;
+    width: 100%;
     border-radius: 15px;
     background-position: center;
     background-size: cover!important;
@@ -642,4 +723,40 @@ footer img#wcu-pencil-1 {
 footer img#wcu-pencil-2 {
     width: 20%;
     left: 88%;
+}
+
+/** Abou Page **/
+div#about-content {
+    margin-top: 50px;
+}
+
+div#about-content h4 {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+div#about-content p {
+    letter-spacing: 0px;
+    line-height: 25px;
+}
+
+.about-image {
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div#about-content p::first-letter {
+    font-size: 52px;
+    letter-spacing: -5px;
+    font-family: 'Merriweather';
+}
+
+div#about-content i {
+    font-weight: 600;
+}
+
+.cta {
+    text-align: center;
 }
